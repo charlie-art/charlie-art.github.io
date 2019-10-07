@@ -20,7 +20,7 @@ function kick() {
 }
 
 function punch() {
-    health -= 5;
+    health -= 10;
     hits += 1;
     player2Health -= 10;
     player2Hits += 6;
