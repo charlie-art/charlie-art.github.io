@@ -1,0 +1,17 @@
+button {
+    background-color: aqua
+}
+
+span {
+    background-color: darkorchid
+}
+
+.player1-img-thumbnail {
+    width: 200px;
+    height: 200px;
+}
+
+.player2-img-thumbnail {
+    width: 200px;
+    height: 200px;
+}

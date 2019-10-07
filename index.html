@@ -1,138 +1,64 @@
 <!DOCTYPE html>
-<html lang="em">
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<style>
-  .row {
-    padding: 20px 10px;
-    border: 1 px
-  }
-</style>
 
 <body>
-
-  <div class="container">
-    <div class="row bg-danger">
-      <div class="col-xs-12 col-md-8">
-        <figure class="figure">
-          <img src="//placehold.it//150x150" class="figure-img img-fluid rounded" alt="...">
-          <figcaption class="figure-caption text-right">A caption for the above image.</figcaption>
-        </figure>
-      </div>
-      <div class="col-xs-6 col-md-4"><a class="btn btn-primary" href="#" role="button">Link</a>
-        <button class="btn btn-primary" type="submit">Button</button>
-        <input class="btn btn-primary" type="button" value="Input">
-        <input class="btn btn-primary" type="submit" value="Submit">
-      </div>
-
-      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-      <div class="row">
-        <div class="col-xs-6 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, natus ut
-          praesentium odio nemo inventore assumenda culpa, odit ipsa tempore explicabo voluptatum saepe architecto
-          doloremque quis, quisquam perferendis? Cum, vero.<button type="button" class="btn btn-primary" data-toggle="button"
-            aria-pressed="false" autocomplete="off">
-            Single toggle
-          </button></div>
-        <div class="col-xs-6 col-md-4"></div>
-        <div class="col-xs-6 col-md-4"><video width="320" height="240" controls>
-            <source src="movie.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-          </video></div>
-      </div>
-
-
-
-
-      <div class="row text-center">
-        <div class="col-sm">
-          <img src="//placehold.it//50x50" alt="..." class="rounded-circle">
-          <div class="card" style="width: 18rem;">
-
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="container-fluid">
+        <div class="row-center bg-primary">
+            <div class="col-sm">
+                <img src="//placehold.it/200x" alt="Player 1 Medusa Image" class="player1-img-thumbnail">
+                <div>
+                    <h3>Medusa: <span id="Medusa"></span></h3>
+                    <h3>Health: <span id="player1HealthDisplay"></span></h3>
+                    <h3>Hits: <span id="player1HitsDisplay"></span></h3>
+                </div>
+                <div>
+                    <button onclick="slap()">slap</button>
+                    <button onclick="kick()">kick</button>
+                    <button onclick="punch()">punch</button>
+                </div>
+                <div>
+                    <button onclick="block()">block</button>
+                    <button onclick="dodge()">dodge</button>
+                    <button onclick="chokeSlam()">choke slam</button>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-sm">
-          <img src="//placehold.it//50x50" alt="..." class="rounded-circle">
-          <div class="card" style="width: 18rem;">
-
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    <div class="container-fluid">
+        <div class="row-center bg-primary">
+            <div class="col-sm">
+                <img src="//placehold.it/200x" alt="Player 2 Batman Image" class="player2-img-thumbnail">
+                <div>
+                    <h3>Batman: <span id="Batman"></span></h3>
+                    <h3>Health: <span id="player2HealthDisplay"></span></h3>
+                    <h3>Hits: <span id="player2HitsDisplay"></span></h3>
+                </div>
+                <div>
+                    <button onclick="slap()">slap</button>
+                    <button onclick="kick()">kick</button>
+                    <button onclick="punch()">punch</button>
+                </div>
+                <div>
+                    <button onclick="block()">block</button>
+                    <button onclick="dodge()">dodge</button>
+                    <button onclick="chokeSlam()">choke slam</button>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-sm">
-          <img src="//placehold.it//50x50" alt="..." class="rounded-circle">
-          <div class="card" style="width: 18rem;">
-
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="row bg-dark">
-      <div class="col">
-        <figure class="figure">
-          <img src="//placehold.it//200x200" class="figure-img img-fluid rounded" alt="...">
-          <figcaption class="figure-caption">A caption for the above image.</figcaption>
-        </figure>
-      </div>
-      <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fuga voluptatem commodi,
-        obcaecati impedit soluta? Aliquam esse nulla quibusdam sed? Illo mollitia, aperiam quibusdam perspiciatis
-        impedit pariatur voluptate. Sequi, voluptates.</div>
-      <div class="w-100"></div>
-      <div class="col"></div>
-      <div class="col">
-
-
-      </div>
     </div>
-  </div>
-  </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <button type="button" class="btn btn-success">Success</button>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm text-right">
-        <button type="button" class="btn btn-success">Success</button>
-      </div>
-    </div>
-  </div>
 
-
+    <script src="app.js"></script>
 </body>
 
 </html>
